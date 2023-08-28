@@ -25,3 +25,14 @@ Certainly! Let's break down the steps of the Simon game as implemented in the co
    - The `checkAnswer()` function is responsible for comparing the user's clicked pattern with the game's pattern:
      - If the colors match and the user's pattern is the same length as the game's pattern, the user proceeds to the next level.
      - If the colors don't match, the game ends, a "wrong" sound is played, and the user is prompted to restart.
+
+5. **Game Over and Restart**:
+   - If the user's pattern doesn't match the game's pattern, the game ends:
+     - A "wrong" sound is played.
+     - The screen briefly flashes red using the `.game-over` class.
+     - The title is updated to show "Game Over" and instructions to restart.
+     - The `startOver()` function is called to reset the game variables.
+
+6. **Sound and Animation**:
+   - The `playSound()` function is used to play audio files corresponding to color names.
+   - The `animatePress()` function briefly highlights a button by adding and removing the `.pressed` class, creating a visual effect when a button is clicked.
