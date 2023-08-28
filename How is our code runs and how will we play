@@ -1,0 +1,14 @@
+Certainly! Let's break down the steps of the Simon game as implemented in the code you provided:
+
+1. **Game Initialization**:
+   - The game starts when a key on the keyboard is pressed. The game level is set to 0, and the `started` variable is set to `false`.
+   - When a key is pressed, the game initializes by updating the title to show the current level and calling the `nextSequence()` function to generate the first color pattern.
+
+2. **Generating a Color Pattern**:
+   - The `nextSequence()` function generates the next color pattern for the game:
+     - The user's clicked pattern is reset to an empty array.
+     - The level increases by 1, and the title is updated to show the current level.
+     - A random number is generated to select a color from the `buttonColours` array.
+     - The chosen color is added to the `gamePattern` array.
+     - The chosen color's button element is animated to create a blinking effect.
+     - The `playSound()` function is called to play the sound corresponding to the chosen color.
