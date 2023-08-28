@@ -36,3 +36,5 @@ Certainly! Let's break down the steps of the Simon game as implemented in the co
 6. **Sound and Animation**:
    - The `playSound()` function is used to play audio files corresponding to color names.
    - The `animatePress()` function briefly highlights a button by adding and removing the `.pressed` class, creating a visual effect when a button is clicked.
+The code uses HTML, CSS, JavaScript, and the jQuery library to create a digital version of the Simon game. 
+It captures user interactions, generates color patterns, checks user responses, plays sounds, and handles game over and restart scenarios.
