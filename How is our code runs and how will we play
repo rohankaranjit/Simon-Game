@@ -12,3 +12,16 @@ Certainly! Let's break down the steps of the Simon game as implemented in the co
      - The chosen color is added to the `gamePattern` array.
      - The chosen color's button element is animated to create a blinking effect.
      - The `playSound()` function is called to play the sound corresponding to the chosen color.
+
+3. **User Interaction**:
+   - The user can click on color buttons with the class `.btn` to interact with the game.
+   - When a button is clicked, the following actions occur:
+     - The clicked color is added to the `userClickedPattern` array.
+     - The `playSound()` function is called to play the corresponding sound.
+     - The `animatePress()` function is called to briefly highlight the clicked button.
+     - The `checkAnswer()` function is called to compare the user's pattern with the game's pattern.
+
+4. **Checking User's Answer**:
+   - The `checkAnswer()` function is responsible for comparing the user's clicked pattern with the game's pattern:
+     - If the colors match and the user's pattern is the same length as the game's pattern, the user proceeds to the next level.
+     - If the colors don't match, the game ends, a "wrong" sound is played, and the user is prompted to restart.
